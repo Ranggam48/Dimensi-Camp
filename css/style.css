@@ -1,0 +1,101 @@
+:root {
+    --primary: #ffd900;
+    --bg:#010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: var(--bg);
+    min-height: 3000px;
+}
+
+/* Navbar start*/
+
+.navbar {
+    margin: 0 auto;
+    background-color: rgba(1, 1, 1, 0.8);
+    padding: 0.5rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    color: var(--primary);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.isi p {
+    margin-top: 20rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
